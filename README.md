@@ -2,7 +2,7 @@
 
 You can bootstrap your next django project with command
 
-> django-admin.py startproject --template=https://github.com/mom1/docker-django-webpack-skeleton/archive/master.zip -e "ini,yml,conf,json" yoursite
+> django-admin.py startproject --template=https://github.com/mom1/django-skeleton-project/archive/master.zip -e "ini,yml,conf,json" your_project
 
 Install requirements
 

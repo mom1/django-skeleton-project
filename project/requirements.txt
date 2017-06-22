@@ -1,0 +1,28 @@
+# Latest django
+django
+#django_extensions
+
+# Debug toolbar
+django-debug-toolbar
+
+# libs
+django-macros-url
+django-template-names
+django-split-settings
+
+# cache
+#django-redis
+#python-memcached
+#django-clear-cache
+
+# Database drivers. Uncomment anyone is used.
+#django-pyodbc-azure
+#MySQL-python
+#mysqlclient
+#psycopg2
+
+# Project custom apps
+
+
+#django-datatables-view
+#django-crispy-forms

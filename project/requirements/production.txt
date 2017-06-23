@@ -1,0 +1,7 @@
+-U -r base.txt
+# Production
+## Database drivers. Uncomment anyone is used.
+##django-pyodbc-azure
+##MySQL-python
+##mysqlclient
+##psycopg2

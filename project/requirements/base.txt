@@ -1,0 +1,20 @@
+# Base
+django
+django-macros-url
+django-template-names
+django-split-settings
+
+## Database drivers. Uncomment anyone is used.
+##django-pyodbc-azure
+##MySQL-python
+##mysqlclient
+##psycopg2
+
+## cache
+##django-redis
+##python-memcached
+##django-clear-cache
+
+## Project custom app
+##django-datatables-view
+##django-crispy-forms

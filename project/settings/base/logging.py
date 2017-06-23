@@ -1,5 +1,4 @@
 import os
-
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -21,30 +20,39 @@ LOGGING = {
         },
     },
     'handlers': {
-        'file': {
-            'level': 'WARNING',
+        'django_log_file': {
+            'level': 'DEBUG',
+            'filters': ['require_debug_true'],
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs', 'errors.log'),
+            'filename': os.path.join(LOGFILE_ROOT, 'django.log'),
             'maxBytes': 1024 * 1024 * 50,  # 50 MB
             'backupCount': 10,
             'formatter': 'verbose'
         },
-        'mail_admins': {
-            'level': 'ERROR',
-            'filters': ['require_debug_false'],
-            'class': 'django.utils.log.AdminEmailHandler'
+        'proj_log_file': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(LOGFILE_ROOT, 'project.log'),
+            'maxBytes': 1024 * 1024 * 50,  # 50 MB
+            'backupCount': 10,
+            'formatter': 'verbose'
         },
         'console': {
             'level': 'INFO',
             'filters': ['require_debug_true'],
             'class': 'logging.StreamHandler',
-        },
+            'formatter': 'simple'
+        }
     },
     'loggers': {
         'django': {
-            'handlers': ['file', 'mail_admins'],
+            'handlers': ['django_log_file'],
             'propagate': True,
-            'level': 'WARNING',
+            'level': 'DEBUG',
+        },
+        'project': {
+            'handlers': ['proj_log_file'],
+            'level': 'DEBUG',
         },
     }
 }

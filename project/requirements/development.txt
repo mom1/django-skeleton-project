@@ -1,0 +1,5 @@
+-U -r base.txt
+# Development
+django-debug-toolbar
+werkzeug
+#django_extensions

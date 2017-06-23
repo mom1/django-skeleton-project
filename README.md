@@ -8,6 +8,9 @@ Install requirements
 
     >cd your_project
     >pip install -U -r project/requirements.txt
+    >python manage.py migrate
+    >python manage.py createsuperuser
+    >python manage.py createcachetable
 
 If you want start app whith skeleton, you can use the following command:
 

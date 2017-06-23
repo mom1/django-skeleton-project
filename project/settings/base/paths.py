@@ -3,4 +3,4 @@ import os
 
 PROJECT_DIR = os.path.realpath(os.path.dirname(os.path.dirname(__file__)))
 BASE_DIR = os.path.realpath(os.path.dirname(PROJECT_DIR))
-LOGFILE_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'logs')
+LOGFILE_ROOT = os.path.join(BASE_DIR, 'logs')

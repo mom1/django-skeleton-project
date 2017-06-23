@@ -1,4 +1,4 @@
--U -r base.txt
+-r base.txt
 # Production
 ## Database drivers. Uncomment anyone is used.
 ##django-pyodbc-azure

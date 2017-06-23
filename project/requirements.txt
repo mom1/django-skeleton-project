@@ -1,1 +1,1 @@
--U -r requirements/development.txt
+-r requirements/development.txt

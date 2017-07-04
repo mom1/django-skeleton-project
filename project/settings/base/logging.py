@@ -21,7 +21,7 @@ LOGGING = {
     },
     'handlers': {
         'django_log_file': {
-            'level': 'DEBUG',
+            'level': 'WARNING',
             'filters': ['require_debug_true'],
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': os.path.join(LOGFILE_ROOT, 'django.log'),
@@ -30,7 +30,7 @@ LOGGING = {
             'formatter': 'verbose'
         },
         'proj_log_file': {
-            'level': 'DEBUG',
+            'level': 'WARNING',
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': os.path.join(LOGFILE_ROOT, 'project.log'),
             'maxBytes': 1024 * 1024 * 50,  # 50 MB
@@ -48,11 +48,11 @@ LOGGING = {
         'django': {
             'handlers': ['django_log_file'],
             'propagate': True,
-            'level': 'DEBUG',
+            'level': 'WARNING',
         },
         'project': {
             'handlers': ['proj_log_file'],
-            'level': 'DEBUG',
+            'level': 'WARNING',
         },
     }
 }

@@ -17,4 +17,8 @@ django-split-settings
 
 ## Project custom app
 ##django-datatables-view
-##django-crispy-forms
+django-crispy-forms
+django-braces>=1.8.1
+django-admin-bootstrapped>=2.5.6
+django-authtools>=1.4.0
+easy-thumbnails>=2.3

@@ -1,0 +1,18 @@
+{% extends "accounts/auth_base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}{{ block.super }}Регистрация{% endblock %}
+
+{% block form_heading %}Регистрация Бесплатна :){% endblock %}
+
+{% block form %}
+  {% crispy form %}
+
+  <div class="form-message">
+    <p>
+      Уже зарегестрирован? <a href="{% url 'accounts:login' %}">Входи</a>.
+    </p>
+  </div>
+{% endblock form %}
+

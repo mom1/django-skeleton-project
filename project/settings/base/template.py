@@ -1,4 +1,5 @@
 import os
+from django.contrib import messages
 
 TEMPLATES = [{
     'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -24,6 +25,17 @@ TEMPLATES = [{
         ]
     },
 }]
+
+# Show thumbnail generation errors
+THUMBNAIL_DEBUG = DEBUG
+
+# Crispy Form Theme - Bootstrap 3
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+# For Bootstrap 3, change error alert to 'danger'
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger'
+}
 
 if DEBUG:
     TEMPLATES[0]['OPTIONS']['loaders'] = (

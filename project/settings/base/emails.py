@@ -7,3 +7,6 @@
 # EMAIL_HOST_PASSWORD = 'SMTP Password'
 # EMAIL_PORT = 587
 # EMAIL_USE_TLS = True
+#
+# Show emails to console in DEBUG mode
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

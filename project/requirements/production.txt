@@ -5,3 +5,4 @@
 ##MySQL-python
 ##mysqlclient
 ##psycopg2
+django-redis

@@ -6,6 +6,4 @@ SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_COOKIE_NAME = 'sid'
 SESSION_COOKIE_AGE = 86400 * 60  # 2 months. Very important to remember users.
 SESSION_CACHE_ALIAS = "default"
-
-if PRODUCTION:
-    SESSION_COOKIE_DOMAIN = '.your production hostname prepended with dot (RFC)'
+CSRF_USE_SESSIONS = True

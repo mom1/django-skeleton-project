@@ -5,12 +5,16 @@
 {% load thumbnail %}
 
 {% block title %}{{ block.super }}Профиль{% endblock %}
-
+{% block navbar-left %}
+  {% include "_navbar.html" %}
+{% endblock %}
 <!-- Benefits of the Django application -->
 {% block container %}
 
 <div class="container">
-  <h1 class="text-primary">Изменить Профиль</h1>
+  <div class="starter-template">
+    <h1 class="text-primary">Изменить Профиль</h1>
+  </div>
   <hr>
   <div class="row">
     <!-- left column -->

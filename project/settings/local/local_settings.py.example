@@ -1,4 +1,4 @@
-ALLOWED_HOSTS = ['127.0.0.1', 'dcr-w7-stolpasov', 'goa-django01', '172.16.12.40']
+ALLOWED_HOSTS = ['127.0.0.1', 'django01']
 INTERNAL_IPS = ['127.0.0.1']
 
 INSTALLED_APPS = INSTALLED_APPS + (
